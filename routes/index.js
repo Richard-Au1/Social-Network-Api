@@ -1,0 +1,10 @@
+// Imports api routes and express.
+const router = require("express").Router();
+const apiRoutes = require("./api");
+
+// Middleware
+router.use("/api", apiRoutes);
+router.use((req, res) => res.send("Wrong route!"));
+
+// Exports files out
+module.exports = router;
