@@ -1,7 +1,7 @@
 // importing other files 
 const db = require("./config/connection");
 const routes = require("./routes");
-const express = require(express);
+const express = require("express");
 
 const cwd = process.cwd();
 
